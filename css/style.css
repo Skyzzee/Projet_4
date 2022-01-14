@@ -1,1 +1,192 @@
-/*font-family: 'Arvo', serif;*/
+:root {
+    --Blanc : #ffffff;
+    --Noir : #000000;
+    --Orange : #ff6347;
+    --Gris : #797878;
+    --Gris_clair : #d9d7d7;
+}
+
+
+body {
+    font-family: 'Arvo', serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Entête de la page */
+
+.Menu {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    background-color: var(--Noir);
+    padding: 12px 15px 6px 15px;
+}
+
+.Menu a {
+    text-decoration: none;
+    color: var(--Blanc);
+}
+
+.menuderoulant {
+    border: 1px solid var(--Blanc);
+    border-radius: 2px;
+    padding: 2px 5px;
+}
+
+header section {
+    display: flex;
+    background-image: url(../images/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 500px;
+    height: 550px;
+}
+
+header section div {
+    display : flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header section div h1 {
+    color: var(--Blanc);
+    width: 70%;
+    margin: 30px 10px;
+    font-weight: lighter;
+}
+
+header section div p {
+    width: 59%;
+    color: var(--Blanc);
+    font-size: 0.9rem;
+    margin: 10px 40px;
+    font-weight: lighter;
+}
+
+header section div a {
+    width: 30%;
+    border: 1px solid var(--Orange);
+    background-color: var(--Orange);
+    color: var(--Blanc);
+    padding: 15px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 25px 100px;
+}
+
+.Code {
+    width: 20%;
+    align-items: center;
+    margin: 0 140px;
+}
+
+
+/*Corps de la page */
+
+/* Principal */
+.center {
+    display: flex;
+    flex-direction: column;
+}
+
+.center img {
+    width : 50%;
+    align-items: center;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.center h1 {
+    margin: 20px 0 10px 0;
+    text-align: center;
+    font-size: 2.3rem;
+    color: var(--Orange);
+    font-weight: lighter;
+}
+
+.center p {
+    text-align: center;
+    width: 90%;
+    margin: 0 20px 20px 20px;
+}
+
+/*Bas du corps*/
+
+.bottom {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: var(--Gris_clair);
+}
+
+.get_involved {
+    font-size: 1.8rem;
+    margin: 20px 0 10px 0;
+}
+
+.bottom h2 {
+    text-align: center;
+    color: var(--Orange);
+    font-weight: lighter;
+}
+
+.bottom p {
+    text-align: center;
+}
+
+.separation {
+    border-bottom:1px solid var(--Orange);
+    width: 50%;
+    margin: 0 0 30px 95px;
+}
+
+
+
+
+
+/*Bas de page*/
+
+footer {
+    background-color: var(--Orange);
+    padding: 120px 0 30px 0;
+}
+
+footer img {
+    width: 80%;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.orange {
+    color: var(--Orange);
+}
+
+.bold {
+    font-weight: bold;
+}
