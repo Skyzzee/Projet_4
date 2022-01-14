@@ -32,6 +32,7 @@ body {
     border: 1px solid var(--Blanc);
     border-radius: 2px;
     padding: 2px 5px;
+    color: var(--Blanc);
 }
 
 header section {
@@ -139,6 +140,15 @@ header section div a {
     border-bottom:1px solid var(--Orange);
     width: 50%;
     margin: 0 0 30px 95px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: var(--Gris);
+    border-radius: 50%;
+    position: relative;
+    margin: 10px 0 10px 140px;
 }
 
 
