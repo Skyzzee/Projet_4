@@ -16,6 +16,7 @@ body {
 
 /* Entête de la page */
 
+/*Menu*/
 header nav {
     display: flex;
     justify-content: space-between;
@@ -39,19 +40,25 @@ header nav {
     filter : invert(1000%);
 }
 
+.Liens-ordi {
+    display : none;
+}
+
+/*Présentation*/
 header section {
     display: flex;
     flex-direction: column;
     align-items: center ;
     background-image: url(../images/hero-image.jpg);
     background-position: top left;
-    aspect-ratio: 1467 /2200;
+    height: auto;
+    width: auto;
 }
 
 header section h1 {
     color: var(--Blanc);
     width: 70%;
-    margin: 50px auto 0 auto;
+    margin: 55px auto 0 auto;
     font-weight: lighter;
 }
 
@@ -60,28 +67,29 @@ header section p {
     color: var(--Blanc);
     font-size: 0.9rem;
     font-weight: lighter;
-    margin: 30px auto;
+    margin: 35px auto;
 }
 
 header section a {
     border: 1px solid var(--Orange);
     background-color: var(--Orange);
     color: var(--Blanc);
-    padding: 15px 15px;
+    padding: 10px 15px;
     border-radius: 8px;
     text-decoration: none;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .Code {
-    width: 20%;
+    width: 80px;
     align-items: center;
+    margin: 0 auto 30px auto;
 }
 
 
 /*Corps de la page */
 
-/* Principal */
+/* WHO WE ARE  */
 .center {
     display: flex;
     flex-direction: column;
@@ -102,11 +110,16 @@ header section a {
 
 .center p {
     width: 90%;
-    margin: 30px auto;
-    
+    margin: 30px auto; 
 }
 
-/*Bas du corps*/
+.separation {
+    border-bottom:1px solid var(--Orange);
+    width: 50%;
+    margin: auto;
+}
+
+/*GET INVOLVED*/
 
 .bottom {
     display: grid;
@@ -116,25 +129,16 @@ header section a {
     
 }
 
-.get_involved {
-    font-size: 2rem;
-}
-
 .bottom h2 {
     color: var(--Orange);
     font-weight: lighter;
     margin : 30px auto 10px auto;
+    font-size: 2rem;
 }
 
 .bottom p {
     margin: 0 auto 20px auto;
     width: 90%;
-}
-
-.separation {
-    border-bottom:1px solid var(--Orange);
-    width: 50%;
-    margin: auto;
 }
 
 .circle {
@@ -165,7 +169,7 @@ header section a {
 
 
 
-/*Bas de page*/
+/*Pied de page*/
 
 footer {
     background-color: var(--Orange);
@@ -177,15 +181,18 @@ footer img {
     margin-right: 10%;
 }
 
-
+/*Variables*/
+/*Majuscule*/
 .uppercase {
     text-transform: uppercase;
 }
 
+/*Couleur*/
 .orange {
     color: var(--Orange);
 }
 
+/*Gras*/
 .bold {
     font-weight: bold;
 }
@@ -194,7 +201,93 @@ footer img {
 
 
 
+
+
+
+
 /* Ordianateur */
 @media (min-width:1200px) {
+    /*Disparition du menu*/
+    .menuderoulant{
+        display : none;
+    }
 
+    /*Apparition des liens*/
+    .Liens-ordi{
+        display:block
+    }
+    
+    .Liens-ordi ul {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        margin: auto;
+    }
+
+    .Liens-ordi ul li a {
+        color: var(--Blanc);
+        text-decoration: none;
+    }
+
+    /* Menu */
+    header nav {
+    padding: 20px 300px 10px 300px;
+    }
+
+    header section h1 {
+        font-size: 4rem;
+        width: 55%;
+    }
+    
+    header section p {
+        width: 65%;
+        font-size: 1.2rem;
+    }
+    
+    header section a {
+        font-size: 1.5rem;
+    }
+    
+
+    /* WHO WE ARE  */
+    .center img {
+        width : 8%;
+    }
+
+    .center h1 {
+        font-size: 2.0rem;
+    }
+
+    .center p {
+        width: 70%;
+        font-size: 1.2rem;
+        margin-bottom: 50px;
+    }
+
+    .separation {
+        width: 10%;
+    }
+
+    /*GET INVOLVED*/
+
+    .articles {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 70%;
+        margin: auto;
+    }
+
+    .bottom p {
+        font-size: 1.2rem;
+        width: 90%;
+    }
+
+
+    /*Pied de page*/
+
+    footer img {
+        width: 20%;
+        margin-right: 45%;
+    }
+    
 }
