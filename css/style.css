@@ -11,75 +11,71 @@ body {
     font-family: 'Arvo', serif;
     font-size: 16px;
     margin: 0;
+    text-align: center;
 }
 
 /* Entête de la page */
 
-.Menu {
+header nav {
     display: flex;
     justify-content: space-between;
     margin: auto;
     background-color: var(--Noir);
-    padding: 12px 15px 6px 15px;
+    padding: 15px 15px 6px 15px;
 }
 
-.Menu a {
+header nav {
     text-decoration: none;
     color: var(--Blanc);
 }
 
-.menuderoulant {
-    border: 1px solid var(--Blanc);
+.menuderoulant { 
+    border: 0.5px solid var(--Gris);
     border-radius: 2px;
-    padding: 2px 5px;
-    color: var(--Blanc);
+    padding: 4px 5px 0 5px;
+    
+}
+.menuderoulant img {
+    filter : invert(1000%);
 }
 
 header section {
     display: flex;
-    background-image: url(../images/hero-image.jpg);
-    background-repeat: no-repeat;
-    background-position: top left;
-    width: 500px;
-    height: 550px;
-}
-
-header section div {
-    display : flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center ;
+    background-image: url(../images/hero-image.jpg);
+    background-position: top left;
+    aspect-ratio: 1467 /2200;
 }
 
-header section div h1 {
+header section h1 {
     color: var(--Blanc);
     width: 70%;
-    margin: 30px 10px;
+    margin: 50px auto 0 auto;
     font-weight: lighter;
 }
 
-header section div p {
-    width: 59%;
+header section p {
+    width: 70%;
     color: var(--Blanc);
     font-size: 0.9rem;
-    margin: 10px 40px;
     font-weight: lighter;
+    margin: 30px auto;
 }
 
-header section div a {
-    width: 30%;
+header section a {
     border: 1px solid var(--Orange);
     background-color: var(--Orange);
     color: var(--Blanc);
     padding: 15px 15px;
     border-radius: 8px;
     text-decoration: none;
-    margin: 25px 100px;
+    margin-bottom: 30px;
 }
 
 .Code {
     width: 20%;
     align-items: center;
-    margin: 0 140px;
 }
 
 
@@ -93,65 +89,79 @@ header section div a {
 
 .center img {
     width : 50%;
-    align-items: center;
     margin: auto;
     margin-top: 80px;
 }
 
 .center h1 {
-    margin: 20px 0 10px 0;
-    text-align: center;
     font-size: 2.3rem;
     color: var(--Orange);
     font-weight: lighter;
+    margin : 20px auto 10px auto ;
 }
 
 .center p {
-    text-align: center;
     width: 90%;
-    margin: 0 20px 20px 20px;
+    margin: 30px auto;
+    
 }
 
 /*Bas du corps*/
 
 .bottom {
-    padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     background-color: var(--Gris_clair);
+    padding-bottom: 50px;
+    
 }
 
 .get_involved {
-    font-size: 1.8rem;
-    margin: 20px 0 10px 0;
+    font-size: 2rem;
 }
 
 .bottom h2 {
-    text-align: center;
     color: var(--Orange);
     font-weight: lighter;
+    margin : 30px auto 10px auto;
 }
 
 .bottom p {
-    text-align: center;
+    margin: 0 auto 20px auto;
+    width: 90%;
 }
 
 .separation {
     border-bottom:1px solid var(--Orange);
     width: 50%;
-    margin: 0 0 30px 95px;
+    margin: auto;
 }
 
 .circle {
     width: 100px;
     height: 100px;
-    background-color: var(--Gris);
+    background-color: var(--Noir);
     border-radius: 50%;
     position: relative;
-    margin: 10px 0 10px 140px;
+    margin :50px auto 20px auto;
 }
 
+.circle img {
+    position : absolute;
+    top : 20px;
+    left : 20px;
+    filter : invert(100%);
+    width: 60%;
+}
 
+.bottom article a {
+    border: 1px solid var(--Gris) ;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    color: var(--Orange);
+    text-decoration: none;
+}
 
 
 
@@ -164,29 +174,8 @@ footer {
 
 footer img {
     width: 80%;
-    margin-left: 20px;
+    margin-right: 10%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .uppercase {
@@ -199,4 +188,13 @@ footer img {
 
 .bold {
     font-weight: bold;
+}
+
+
+
+
+
+/* Ordianateur */
+@media (min-width:1200px) {
+
 }
