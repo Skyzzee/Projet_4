@@ -23,9 +23,6 @@ header nav {
     margin: auto;
     background-color: var(--Noir);
     padding: 15px 15px 6px 15px;
-}
-
-header nav {
     text-decoration: none;
     color: var(--Blanc);
 }
@@ -37,7 +34,7 @@ header nav {
     
 }
 .menuderoulant img {
-    filter : invert(1000%);
+    filter : invert(100%); /*fill: var(--white); uniquement pour format svg*/
 }
 
 .Liens-ordi {
@@ -51,27 +48,25 @@ header section {
     align-items: center ;
     background-image: url(../images/hero-image.jpg);
     background-position: top left;
-    height: auto;
+    height: auto; /* background-size : cover; -> couvrir le texte */
     width: auto;
+    color: var(--Blanc);
 }
 
 header section h1 {
-    color: var(--Blanc);
     width: 70%;
     margin: 55px auto 0 auto;
-    font-weight: lighter;
+    font-weight: normal;
 }
 
 header section p {
     width: 70%;
-    color: var(--Blanc);
     font-size: 0.9rem;
-    font-weight: lighter;
+    font-weight: normal;
     margin: 35px auto;
 }
 
 header section a {
-    border: 1px solid var(--Orange);
     background-color: var(--Orange);
     color: var(--Blanc);
     padding: 10px 15px;
@@ -165,6 +160,7 @@ header section a {
     font-size: 0.7rem;
     color: var(--Orange);
     text-decoration: none;
+    background-color: var(--Blanc);
 }
 
 
